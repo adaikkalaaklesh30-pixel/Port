@@ -1,0 +1,156 @@
+<html>
+    <head>
+<link rel="stylesheet" href="style.css">
+
+<div class="header">
+    <center><h1 class="h1">Hi I'm Adaikkala Aklesh</h1></center>
+</div>
+<meta charset="UTF-8">
+<meta name="viewport" content=" width=device-width,initial-scale=1.0">
+
+    </head>
+    <body>
+<div class="onion">
+    <h1 class="typing">I'M <br>Adaikkala Aklesh</h1>
+    <h4 class="typing">Front-end Developer|Html|Css|JavaScript</h4>
+    <img class="fruit" src="profile.jpg" >
+</div>
+<div class="lemon">
+  <center>  <h1 class="hmk">Education</h1></center>
+  <section class="education">
+    <div class="msc">
+        <h2 class="union">M.Sc ComputerScience</h2>
+        <h3>J.J. College of arts and science,pudukkotai</h3>
+        <p>percentage :84 %</p>
+    </div>
+    <div class="msc">
+        <h2 class="union">B.Sc ComputerScience</h2>
+        <h3>J.J. College of arts and Science,pudukkotai</h3>
+        <p>Percentage :82.3 %</p>
+    </div>
+    <div class="msc">
+        <h2 class="union">HSC</h2>
+        <h3>Ulagappar Higher Secondary School</h3>
+        <p>Percentage :83%</p>
+    </div>
+    <div class="msc">
+        <h2 class="union">SSLC</h2>
+        <h3>Skt Gandhi High School </h3>
+        <p>Percentage :73.2 %</p>
+    </div>
+  </section>
+</div>
+<div class="mbg">
+    <section>
+   <center> <h1 class=bnm >skills</h1></center>
+   <div class="dropdown">
+    <select>
+       <center> 
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        </center>
+    </select>
+   </div>
+       <center> <div class="skillo">
+            <h2 class="union">HTML</h2>
+            <h3>
+                Structure of website using tag
+       </h3>
+        </div>
+        <div class="skillo">
+            <h2 class="union">CSS</h2>
+            <h3>
+                Styling and animation for website
+            </h3>
+        </div>
+        <div class="skillo">
+            <h2 class="union">JavaScript</h2>
+            <h3>
+                Make website intractive and dynamic
+            </h3>
+        </div>
+        <div class="uty">
+            <h1 class="iok">Projects</h1>
+        </div>
+    
+   </center>
+</div>
+<div class="sdr">
+<div class="e">
+    <h1 class="bnml">E commerce Website</h1><br>
+    <h4 class="oil">A fully functional e-commerce platform<br> for a fruits shop with product listings,<br>admin dashboard,order tracking ,<br>and user authentication features</h4>
+</div>
+<div class="f">
+    <h1 class="bnml">Personal Portfolio Website</h1>><br>
+    <h4 class="oik">A Rresponsive personal portfolio showcasing<br> projects ,skills,contacts information.<br>built with modern UI/UX princible <br>and deployed on GitHub pages.</h4>
+</div>
+</div>
+<div class="erd">
+    <div class="ytg">
+        <center>
+        <h1 class="tgv">Contact</h1>
+        </center>
+    
+    <div class="trf">
+    <center>
+    <form class="omb">
+    <label>Name:</label><br>
+    <input  type="text" placeholder="Enter your Name"><br><br>
+    <label>Email:</label><br>
+    <input type="email" placeholder="Enter Your Email"><br><br>
+    <label>Message:</label><br>
+    <input class="vbn" type="text" placeholder="Enter your Message"><br>
+    <button class="oi" onclick="showMsg()">Send</button>
+    <p id="msgh" style="display: none; color: green;">Message Sent Succesfully</p>
+    <script>
+        function showMsg() {
+           document.getElementById("msgh").style.display="block"; 
+        }
+    </script>
+    </form>
+    </center>
+    </div>
+    </div>
+</div>
+<script type="module">
+    import{initializeApp}from"firebase/app";
+    import{getAnalytics}from "firebase/analytics";
+    
+    const firebaseConfig={
+    apiKey:"AIzaSyBpXTGuQs_Id6DeLWxmgIGmb8ZFEZEwYBs",
+    authDomain: "pojv-a9bb9.firebaseapp.com",
+    projectId:"pojv-a9bb9",
+    storageBucket:"pojv-a9bb9.firebasestorage.app",
+    messagingSenderId:"83794869577",
+    appId:"1:83794869577:web:001786d9b629ae5a906e98",
+    measurementId:"G-SV34083f7B"
+    };
+
+    const app=initializeApp(firebaseConfig);
+    const analytics=getAnalytics(app);
+
+ document.getElementById("omb")
+ .addEventListener("submit",async function (e) {
+    e.preventDefault();
+
+    const name =document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const message=document.getElementById("message").value;
+
+    try{
+        await addDoc(collection(db,"message"),{
+            name:name,
+            email:email,
+            message:message
+        });
+  
+ alert("message sent");
+    }catch(error){
+        alert(error);
+    }
+});
+</script>
+
+    </body>
+</html>

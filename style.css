@@ -1,0 +1,418 @@
+.header{
+ background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+padding: 1px;
+position:relative;
+border-color:red;
+border-width: 5px;
+border-style: solid;
+margin-top: 20px;
+
+}
+.h1{
+    color:white;
+}
+.onion{
+    background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+    width: 1215px;
+    height:400px;
+    color:white;
+    padding:50px;
+      position: relative;
+    padding-top: 100px;
+    margin-bottom: 800px;
+     border-color: goldenrod;
+     border-width: 5px;
+     border-style: solid;
+    font-size: 30px;
+    
+}
+@keyframes bgglow{
+    from{
+        box-shadow: inset 0 0 50px cyan;
+    }
+    to{
+        box-shadow: inset 0 0 120px cyan;
+    }
+}
+.fruit{
+   
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    left: 800px;
+    bottom: 300px;
+    right:100px;
+    border:5px solid white;
+
+}
+
+.lemon{
+     background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+    border:5px solid goldenrod;
+    position: relative;
+    height:400px;
+    width:1320px;
+    bottom:800px;
+    border-top: 40px;
+    
+}
+.hmk{
+    color:black;
+    padding:4px;
+    background-color:cyan;
+    border:5px solid red;
+    bottom:40px
+}
+.education{
+    display:flex;
+    gap:20px;
+
+    overflow-x: auto;
+    padding:20px;
+
+    scroll-behavior: smooth;
+}
+.msc{
+    min-width: 250px;
+    background:cyan;
+    color:white;
+
+    padding: 20px;
+    border-radius :15px;
+
+    flex-shrink:0;
+}
+.onion{
+    animation: slide 1s ease;
+}
+@keyframes slide{
+    from{
+        opacity:0;
+        transform:translateY(100px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+.msc:hover{
+    box-shadow: 0 0 20px cyan;
+    transition:0.3s;
+}
+.fruit{
+    position: relative;
+    animation: move 2s  alternate;
+
+}
+@keyframes move{
+    0%{
+        right:0;
+
+    }
+    50%{
+        left:50px;
+    }
+    100%{
+        right:0;
+    }
+}
+.fruit{
+    box-shadow: 0 0 20px cyan;
+    transition: 0.3s;
+}
+.typing{
+   color:white;
+
+    animation: typing 1s infinite alternate;
+    }
+    @keyframes typing{
+        from{
+            text-shadow: 0 0 10px cyan;
+
+        }
+        to{
+            text-shadow: 0 0 25px cyan;
+        }
+    }
+    .msc{
+        width: 250px;
+        padding: 30px;
+
+        background:black;
+        color:white;
+
+        border-radius: 20px;
+        
+        position:relative;
+
+        animation:kjm 2s infinite;
+    }
+    @keyframes kjm{
+        0%{
+            left:0;
+        }
+        50%{
+            left:50px;
+        }
+        100%{
+            left:0;
+        }
+    }
+    .union{
+        color:cyan;
+    }
+    .mbg{
+         background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+          border:5px solid goldenrod;
+        height:850px;
+        width:1320px;
+        position: relative;
+        bottom: 821px;
+
+
+    }
+    .bnm{
+         color:black;
+    padding:4px;
+    background-color:cyan;
+    border:5px solid red;
+    position: relative;
+    margin-top:1px;
+  
+    
+    }
+    .dropdown{
+        display: flex;
+        justify-content:center;
+        animation: fade 2s ease;
+        padding:12px 20px;
+        border-radius: 10px;
+
+        background: black;
+        color:white;
+
+        font-size: 18px;
+
+        border: 2px solid cyan;
+        box-shadow:0 0 10px  cyan;
+        transition:0.3s;
+    }
+    .dropdown:hover{
+        box-shadow: 0 0 25px cyan;
+        transform: scale(1.05);
+    }
+    @keyframes fade{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+    .skillo{
+        color:white;
+        width: 250px;
+        padding: 30px;
+        background:black;
+        gap: 30px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        border-radius:20px;
+        text-align:center;
+        transition: 0.3s;
+        animation: up 1s ease;
+    }
+    .skillo:hover{
+        transform: translateY(-10px)scale(1.05);
+        box-shadow: 0 0 20px cyan;
+    }
+    @keyframes up{
+        from{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .uty{
+         background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+        height:700px;
+        width:1320px;
+        left: -5px;
+        position: relative;
+        top:30px;
+        border:5px solid goldenrod;
+    }
+  .iok{
+        color:black;
+    padding:4px;
+    background-color:cyan;
+    border:5px solid red;
+    position: relative;
+top:-21px;
+  }
+  .e{
+    background:black;
+   
+    padding-left: 20px;
+    padding-right: 2px;
+    position: relative;
+    
+
+  }
+  .bnml{
+    color:cyan;
+  
+   
+    
+  }
+  .f{
+    background:black;
+    margin-right: 1000px;
+    padding-left: 20px;
+    padding-right: 2px;
+    position: relative;
+ 
+  }   
+  .oil{
+    color: white;
+  }
+  .oik{
+    color: white;
+  }
+  .e,
+  .f{
+    position: absolute;
+   left:0;
+   top:0;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  .e{
+    animation-name: show1;
+  }
+  .f{
+    animation-name: show2;
+  }
+  @keyframes show1{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  @keyframes show2{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+  .sdr{
+    position: relative;
+    margin-top: -750px;
+    margin-left: 450px;
+  }
+  .f{
+    background: linear-gradient(135deg,#111,#1e1e1e);
+    width: 350px;
+    padding:25px;
+    border-radius: 25px;
+    border: 2px solid cyan;
+    box-shadow: opx opx 20px cyan;
+    transition: 0.5s;
+  }
+  .f:hover{
+    transform: scale(1.05);
+    box-shadow: 0px  opx 35px cyan;
+  }
+  .bnml{
+    color:cyan;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  .oik,
+  .oil{
+    color: white;
+    line-height: 35px;
+    font-size: 24px;
+  }
+  .e{
+      background: linear-gradient(135deg,#111,#1e1e1e);
+    width: 350px;
+    padding:25px;
+    border-radius: 25px;
+    border: 2px solid cyan;
+    box-shadow: opx opx 20px cyan;
+    transition: 0.5s;
+  }
+  .ytg{
+      background:#0f172a;
+    animation: bgglow 3s infinite alternate;
+        height:700px;
+        width:1320px;
+        left: 1px;
+        position :relative;
+        top:626px;
+        border:5px solid goldenrod;
+  }
+  .tgv{
+    color:black;
+    padding:4px;
+    background-color:cyan;
+    border:5px solid red;
+    position: relative;
+    top:-21px;
+  }
+  .omb label{
+    color:#111827;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+  .omp input{
+    width :100;
+    padding:12px;
+    border:2px solid #cbd5e1;
+    border-radius: 89px;
+    font-size: 16px;
+  }
+  .trf{
+    background: #cbd5e1;
+    padding :50px;
+    position: relative;
+    
+  }
+  .oi{
+     color:black;
+     background-color: red;
+    padding: 8px;
+    font-size:16px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top:15px;
+    position: relative;
+    border-radius: 20%;
+}
+.vbn{
+    padding: 50px;
+}
